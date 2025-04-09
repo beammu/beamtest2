@@ -1,0 +1,68 @@
+body {
+    font-family:'Fira Code', monospace;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;}
+
+    .choice-container {
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid #f6ec90;
+        border-radius: 8px;
+        background-color: #f6ec90;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        flex-direction: row;
+        border: flex;
+    
+        box-sizing: border-box;
+        
+        
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        
+        
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    .choice-container:hover {
+        background-color: #e5da7f;
+    }
+    #game {
+        display: flex;
+        flex-direction: row;  
+        justify-content: center;
+        align-items: stretch; }
+
+    /* For tablets */
+@media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  /* For mobile phones */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+    
+    .choice-container {
+      flex-direction: column; /* Stack choices vertically */
+    }
+    
+    .choice {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
